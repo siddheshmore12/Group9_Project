@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">CV/ML Startup</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,24 +19,31 @@
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <!-- Add this toggle button in the navbar or hero section -->
-        <button id="themeToggle" style="cursor: pointer; background-color: transparent; border: none; color: black;">Toggle Theme</button>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
-
-
     </div>
 </nav>
 
-<!-- Hero Section -->
 <section class="hero">
     <div class="container text-center">
         <h1>Empowering Vision with AI</h1>
         <p>Innovative solutions in Computer Vision and Machine Learning.</p>
-        <a href="about.html" class="btn btn-primary">Learn More</a>
+        <button class="btn btn-primary" onclick="openModal()">Learn More</button>
+        <div id="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <p class="LearnMoreDesc">Empowering Vision with AI: Explore our advanced AI-driven capabilities that redefine image analysis and processing:
+                    Object Detection: Identify and categorize objects in real time, enhancing automation and accuracy across industries.
+                    Image Processing: Advanced algorithms transform images into detailed data, enabling high-quality analysis and pattern recognition.
+                    Facial Recognition: Secure, fast, and accurate face identification for enhanced security and personalized user experiences.
+                    Anomaly Detection: Spot deviations and irregularities instantly, essential for quality control and predictive maintenance.
+                    Image Segmentation: Break down complex images into segments for deeper understanding and targeted analysis.
+                    Optical Character Recognition (OCR): Extract and digitize text from images, streamlining data entry and document processing.
+                    Feature Extraction: Identify unique elements within images to support customized and specialized applications.
+                    Image Enhancement: Boost clarity, contrast, and detail in images for better analysis and visual quality.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Services Section -->
 <section class="services container">
     <h2>Our Services</h2>
     <div class="row">
@@ -56,13 +62,9 @@
     </div>
 </section>
 
-<!-- Footer -->
 <footer class="text-center py-4">
     <p>&copy; 2024 CV/ML Startup</p>
 </footer>
-<button id="backToTop" class="back-to-top" title="Go to top">↑</button>
-
-<!-- Back to Top Button -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
